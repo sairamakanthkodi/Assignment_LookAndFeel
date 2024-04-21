@@ -18,25 +18,8 @@ body, html {
 .nav-item.nav-link:hover {
   color: #ccc; 
 }
-/* Main Content alignment and padding */
-.container {
-  padding-top: 20px;
-}
 
-/* Form styling */
-.form-group label {
-  color: #666;
-}
 
-/* Table styling */
-.table th, .table td {
-  text-align: center; /* Center-align table headers and cells */
-}
-
-/* Button styling */
-.btn-primary {
-  width: 100%; /* Full-width button */
-}
 
 .intro-section {
   position: relative;
@@ -87,6 +70,79 @@ body, html {
 .btn-explore:hover {
   background-color: #0056b3;
   transform: translateY(-2px); 
+}
+/* Main Content alignment and padding */
+.container {
+  padding-top: 20px;
+}
+
+/* Form styling */
+.form-group label {
+  color: #666;
+}
+
+/* Table styling */
+.table th, .table td {
+  text-align: center; /* Center-align table headers and cells */
+}
+
+/* Button styling */
+.btn-primary {
+  width: 100%; /* Full-width button */
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+
+.card img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-title {
+  color: #007bff; /* Bootstrap primary color */
+}
+.card-text {
+  text-align: justify;
+  font-weight: 350;
+  font-size: small;
+  font-family: 'Times New Roman', Times, serif;
+}
+.btn-outline-info, .btn-outline-dark {
+  margin-top: 10px;
+  margin-right: 5px;
+  font-size: 0.8rem; /* Smaller font size for buttons */
+}
+
+.btn-outline-info {
+  border-color: #007bff; /* Bootstrap info color */
+  color: #007bff;
+}
+
+.btn-outline-info:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-outline-dark {
+  border-color: #333; /* Dark grey border for GitHub button */
+  color: #333;
+}
+
+.btn-outline-dark:hover {
+  background-color: #333;
+  color: white;
+}
+
+.fab {
+  margin-right: 5px; /* Space between icon and text */
 }
 
 /* Review page CSS */
@@ -147,6 +203,8 @@ body, html {
       width: calc(33.333% - 1rem); /* 3 cards per row with gap on medium devices */
   }
 }
+
+
 
 
 
