@@ -129,5 +129,25 @@ body, html {
   }
 }
 
+/* Main Content alignment and padding */
+.container {
+  padding-top: 20px;
+}
+
+/* Form styling */
+.form-group label {
+  color: #666;
+}
+
+/* Table styling */
+.table th, .table td {
+  text-align: center; /* Center-align table headers and cells */
+}
+
+/* Button styling */
+.btn-primary {
+  width: 100%; /* Full-width button */
+}
+
 
 
