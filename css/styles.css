@@ -203,7 +203,43 @@ body, html {
       width: calc(33.333% - 1rem); /* 3 cards per row with gap on medium devices */
   }
 }
+/* Styling for the new sections */
+.data-section, .data-model-section {
+  padding: 40px 0;
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+}
 
+.section-heading {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.section-text, .figure-caption {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #333;
+  max-width: 800px;
+  margin: auto;
+}
+
+.github-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.github-link:hover {
+  text-decoration: underline;
+}
+
+.erd-diagram {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc; 
+  padding: 5px;
+}
 
 
 
