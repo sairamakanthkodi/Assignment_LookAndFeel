@@ -1,9 +1,54 @@
-let reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+
+// Data for the dropdowns and table
+const vehicleData = [
+    { brand: 'AUDI', model: 'A3', electricRange: 16, city: 'Seattle', county: 'King' },
+    { brand: 'AUDI', model: 'A3', electricRange: 16, city: 'Olympia', county: 'Thurston' },
+    { brand: 'TESLA', model: 'MODEL S', electricRange: 210, city: 'Lacey', county: 'Thurston' },
+    { brand: 'JEEP', model: 'WRANGLER', electricRange: 25, city: 'Tenino', county: 'Thurston' },
+    { brand: 'TESLA', model: 'MODEL 3', electricRange: 308, city: 'Yakima', county: 'Yakima' },
+    { brand: 'JEEP', model: 'WRANGLER', electricRange: 21, city: 'Olympia', county: 'Thurston' },
+    { brand: 'CHEVROLET', model: 'VOLT', electricRange: 53, city: 'Keyport', county: 'Kitsap' },
+    { brand: 'TESLA', model: 'MODEL 3', electricRange: 322, city: 'Mountlake Terrace', county: 'Snohomish' },
+    { brand: 'AUDI', model: 'Q5', electricRange: 23, city: 'Seattle', county: 'King' }
+  ];
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    // Populate table with vehicle data
+    const tableBody = document.getElementById('tableBody');
+    vehicleData.forEach(vehicle => {
+      const row = tableBody.insertRow();
+      row.insertCell(0).textContent = vehicle.brand;
+      row.insertCell(1).textContent = vehicle.model;
+      row.insertCell(2).textContent = vehicle.electricRange;
+      row.insertCell(3).textContent = vehicle.city;
+      row.insertCell(4).textContent = vehicle.county;
+    });
+  
+    // Extract unique counties and brands for dropdowns
+    const uniqueCounties = [...new Set(vehicleData.map(vehicle => vehicle.county))];
+    const uniqueBrands = [...new Set(vehicleData.map(vehicle => vehicle.brand))];
+  
+    // Populate County dropdown
+    const dropdownCounty = document.getElementById('dropdownCounty');
+    uniqueCounties.forEach(county => {
+      const option = new Option(county, county);
+      dropdownCounty.add(option);
+    });
+  
+    // Populate Brand dropdown
+    const dropdownBrand = document.getElementById('dropdownBrand');
+    uniqueBrands.forEach(brand => {
+      const option = new Option(brand, brand);
+      dropdownBrand.add(option);
+    });
+  });
+  let reviews = JSON.parse(localStorage.getItem('reviews')) || [];
 
 document.addEventListener('DOMContentLoaded', function () {
   displayReviews();
 });
 
+//review form
 document.getElementById('reviewForm').addEventListener('submit', function (event) {
   event.preventDefault();
   const carBrand = document.getElementById('carBrand').value;
@@ -51,4 +96,3 @@ function deleteReview(index) {
     displayReviews();
   }
 }
-
