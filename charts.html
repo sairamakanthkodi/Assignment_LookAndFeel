@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Vehicles Charts</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/charts.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg custom-navbar">
+    <h3>Electric Vehicles Population</h3>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="index.html">Home</a>
+            <a class="nav-item nav-link" href="dataexplore.html">Data Explore</a>
+            <a class="nav-item nav-link" href="review.html">Review</a>
+            <a class="nav-item nav-link active" href="charts.html">Charts</a>
+            <a class="nav-item nav-link" href="about.html">About Us</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-6 chart-area">
+            <h2 class="chart-heading">Distribution of Electric Vehicle Types</h2>
+            <canvas id="pieChart"></canvas>
+            <p>This pie chart illustrates the distribution of different types of electric vehicles, showing how each type contributes to the total EV population.</p>
+        </div>
+        <div class="col-lg-6 chart-area">
+            <h2 class="chart-heading">Vehicle Registrations by Brand</h2>
+            <canvas id="barChart"></canvas>
+            <p>The above bar chart shows the number of registrations per brand, giving insight into which brands are more prevalent in the electric vehicle market.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 chart-area">
+            <h2 class="chart-heading">Registrations Over Time</h2>
+            <canvas id="lineChart"></canvas>
+            <p>This line chart displays the trend of vehicle registrations over time, highlighting the growth or decline in new registrations each year.</p>
+        </div>
+    </div>
+</div>
+
+<script src="js/charts.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

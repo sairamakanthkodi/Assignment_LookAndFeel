@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+}
+
+.container {
+    padding: 20px;
+}
+
+.chart-area {
+    margin: 0px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.col-lg-6,
+.col-12 {
+    padding: 15px;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    border-left: 4px solid #007BFF;
+    padding-left: 15px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.chart-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+
+@media (min-width: 992px) {
+    .col-lg-6:first-child {
+        padding-right: 20px;
+       
+    }
+
+    .col-lg-6:last-child {
+        padding-left: 20px;
+     
+    }
+}
+
+@media (max-width: 992px) {
+    .chart-area {
+        margin-bottom: 20px;
+    }
+}
